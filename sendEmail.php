@@ -153,7 +153,7 @@ class EnvioEmails {
             $mail->Host = "smtp.gmail.com";
             $mail->SMTPAuth = true;
             $mail->Username = "emailsendti@gmail.com";
-            $mail->Password = 'sendemail2020';
+            $mail->Password = '';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
