@@ -1,11 +1,20 @@
- $nome = $portal['Nome'];
-        $pessoaID = $portal['PessoaID'];
-        $email = 'eduardacirina@gmail.com';
-        $destiny = $email;
-        $reply = "Resposta";
-        $subject = "Consulta de Documentos";
-        $altBody = 'This is the body in plain text for non-HTML mail clients';
-        $html = '<!DOCTYPE html>
+<?php 
+
+require '../../libs/mailer/ExceptionC.php';
+require '../../libs/mailer/PHPMailer.php';
+require '../../libs/mailer/SMTP.php';   
+
+class EnvioEmails {
+ 
+
+           $nome = $portal['Nome'];
+           $pessoaID = $portal['PessoaID'];
+           $email = 'eduardacirina@gmail.com';
+           $destiny = $email;
+           $reply = "Resposta";
+           $subject = "Consulta de Documentos";
+           $altBody = 'This is the body in plain text for non-HTML mail clients';
+           $html = '<!DOCTYPE html>
                 <html>
                 <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
